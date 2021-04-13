@@ -7,9 +7,12 @@ int main()
 int n;
 scanf("%d",&n);
 
-for(int i=0;i<n;i++)
+for(int i=0;i<n-1;i++)
+{
+    logic();
+    printf("\n");
+}
 logic();
-
 }
 
 void logic()
@@ -19,8 +22,8 @@ void logic()
     int len=strlen(str);
 
     if(len>10)
-    printf("%c%d%c\n",str[0],len,str[len-1]);
+    printf("%c%d%c",str[0],len-2,str[len-1]);
     else
-    printf("%s\n",str);
+    printf("%s",str);
     
 }
